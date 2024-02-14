@@ -1,0 +1,96 @@
+header {
+    background-color: #2196F3;
+    padding: 10px 15px;
+}
+header nav .navbar-nav .nav-link {
+    color: #efefef !important;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px 18px !important;
+}
+header .navbar-brand {
+    max-width: 200px;
+}
+
+
+
+
+/* Header Search Bar */
+.header-search input[type="text"] {
+    border: none;
+}
+.header-search .input-group-addon button {
+    color: #fff;
+    background: #ef2d2c;
+    padding: 10px 15px;
+    border: none;
+    font-size: 12px;
+}
+/*  */
+
+/*  */
+/* End Header Search Bar */
+
+
+/* Header cart CSS */
+header .cart a {
+    color: #fff;
+    text-decoration: none;
+}
+header .cart {
+    position: relative;
+    left: -15px;
+}
+header .cart a span.number {
+    position: relative;
+    left: 38px;
+    top: -4px;
+    color: #ef2d2c;
+}
+header .cart a span.number {
+    position: relative;
+    left: 38px;
+    top: -4px;
+    color: #ffffff;
+}
+header .cart a {
+    color: #fff;
+    text-decoration: none;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height to full viewport height */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    max-height: 100%; /* Ensure images don't exceed container height */
+    margin: auto; /* Center images horizontally and vertically */
+}
+
+
+
+/* Responsive CSS */
+@media (max-width: 991px) {
+    header .cart a img {
+        width: 30px;
+        margin-left: 10px;
+    }
+    header .cart a span.number {
+        left: 40px;
+        top: -7px;
+        font-size: 14px;
+    }
+    header {
+        padding: 10px 0px;
+    }
+    .cart-login {
+        position: absolute;
+        right: 70px;
+    }
+    header .navbar-brand {
+        max-width: 150px;
+    }
+}

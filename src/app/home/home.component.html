@@ -1,0 +1,88 @@
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <nav class="navbar navbar-expand-xl navbar-light">
+                    <div class="container-fluid">
+                        <!-- <a href="#" class="navbar-brand"><img src="/asset/icons8-mobile-shopping-100.png" alt="logo" class="img-fluid logo-img" /></a> -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ProductDetails</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ProductList</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link " href="#">Cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-lg-3 col-md-3"> <!-- Changed col-lg-4 to col-lg-3 -->
+                <div class="header-search mt-2">
+                    <div class="search-form">
+                        <form (ngSubmit)="search()">
+                            <div class="input-group">
+                                <input type="text" name="searchQuery" id="searchQuery" class="form-control" placeholder="Search Here" [(ngModel)]="searchQuery" />
+                                <div class="input-group-addon">
+                                    <button type="submit"><i class="bi bi-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="col-lg-1 col-md-1"></div> Added an empty column for spacing -->
+
+            <div class="col-lg-2 col-md-3 cart-login"> <!-- Adjusted column sizes -->
+                <div class="float-end cart mt-2">
+                    <a href="#" class="navbar-brand"><img src="/assets/icons8-shopping-cart-26.png" alt="logo" class="img-fluid" /></a>
+                </div>
+            
+                <div class="float-end me-4"> <!-- Added margin to the right -->
+                    <button type="button" class="btn btn-light mt-2 btn-sm me-2">Register</button>
+                    <button type="button" class="btn btn-light mt-2 btn-sm">Login</button>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 image-container">
+            <a href="list_of_phones.html">
+                <img src="/assets/samsung.webp" class="img-fluid rounded-circle" alt="Image 1">
+            </a>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 image-container">
+            <a href="list_of_phones.html">
+                <img src="/assets/huawei-logo-huawei-icon-free-free-vector.jpg" class="img-fluid rounded-circle" alt="Image 2">
+            </a>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4 image-container">
+            <a href="list_of_phones.html">
+                <img src="/assets/FreeVector-Shiny-Apple-Logo.jpg" class="img-fluid rounded-circle" alt="Image 3">
+            </a>
+        </div>
+    </div>
+</div>
